@@ -1,1 +1,1 @@
-Responsi Web Praktik Menggunakan HTML&CSS.
+Responsi Web praktik membuat portofolio web Menggunakan HTML&CSS.
