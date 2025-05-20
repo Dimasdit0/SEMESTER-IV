@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>5231011017 Dimas Arwandito</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>DIMAS ARWANDITO</h1>
+      <p>Instagram | Github | Facebook</p>
+      <nav>
+        <a href="#beranda">Beranda</a>
+        <a href="#tentang">Tentang</a>
+        <a href="#karya">Karya</a>
+        <a href="#kontak">Kontak</a>
+      </nav>
+    </header>
+
+    <section id="beranda" class="hero">
+      <img src="https://i.imgur.com/c46GQ1o.jpeg" alt="Dimas Arwandito" />
+      <h2>Hai, aku DIMAS ARWANDITO!</h2>
+      <p>Senang banget bisa berbagi karya-karyaku di sini.</p>
+    </section>
+
+    <section id="tentang" class="section">
+      <h2>Tentang Saya</h2>
+      <p>Aku anak Teknik Komputer yang suka membaca dan coding.</p>
+      <p>Skillku sekarang ada HTML, CSS, Java dan sedikit PhP.</p>
+      <p>Sering ngerjain project kecil buat latihan dan upgrade skill!</p>
+      <div class="skills">
+        <div>Bikin layout web</div>
+        <div>Project IoT</div>
+        <div>Desain UI sederhana</div>
+      </div>
+    </section>
+
+    <section id="karya" class="section">
+      <h2>Galeri Karya</h2>
+      <div class="portfolio-items">
+        <div>
+          <img src="Turbidity.jpg" alt="Pemfilteran otomatis" />
+          <h3>Project Turbidity Sensor</h3>
+          <p>
+            Proyek menggunakan Arduino, sensor turbidity, dan servo motor untuk
+            menyaring air kotor secara otomatis.
+          </p>
+        </div>
+        <div>
+          <img src="WebCV.jpg" alt="Web CV" />
+          <h3>Web CV</h3>
+          <p>
+            Membuat halaman web sederhana untuk menampilkan CV menggunakan HTML
+            dan CSS.
+          </p>
+        </div>
+        <div class="iot-item">
+          <div class="iot-gallery">
+            <img src="IoT.jpg" alt="IoT Project 1" />
+            <img src="IoT1.jpg" alt="IoT Project 2" />
+          </div>
+          <h3>TEKNIK KOMPUTER GANG</h3>
+          <p>
+            Teknik Komputer 2023.
+          </p>
+        </div>
+        
+    </section>
+
+    <section id="kontak" class="section">
+      <h2>Hubungi Saya</h2>
+      <form>
+        <input type="text" placeholder="Nama" required />
+        <input type="email" placeholder="Email" required />
+        <textarea placeholder="Pesan" required></textarea>
+        <button type="submit">Kirim Pesan</button>
+      </form>
+      <a href="https://github.com/Dimasdit0" target="_blank">GitHub</a> |
+      <a href="https://www.instagram.com/arwandito" target="_blank"
+        >Instagram</a
+      >
+    </section>
+
+    <footer>
+      <p>© 2024 Dimas Arwandito. Hak cipta dilindungi.</p>
+    </footer>
+
+    <script>
+      const sections = document.querySelectorAll(".section, .hero");
+      const revealOnScroll = () => {
+        sections.forEach((sec) => {
+          const rect = sec.getBoundingClientRect();
+          if (rect.top < window.innerHeight - 100) {
+            sec.classList.add("fade-in");
+          }
+        });
+      };
+      window.addEventListener("scroll", revealOnScroll);
+      window.addEventListener("load", revealOnScroll);
+    </script>
+  </body>
+</html>
